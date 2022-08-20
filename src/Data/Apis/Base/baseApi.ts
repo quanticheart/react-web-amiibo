@@ -18,6 +18,7 @@ export default function useCon(apiFunc: any) {
             else message = String(error)
             setError(message || "Unexpected Error!");
         } finally {
+            console.log("finish")
             setLoading(false);
         }
     };
