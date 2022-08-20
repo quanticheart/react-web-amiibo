@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import {makeStyles} from "@mui/material";
 
 export const MainStack = styled(Stack)`
   && {

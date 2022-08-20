@@ -1,14 +1,14 @@
 import React from 'react'
 import HomeView from './HomeView';
 import HomeModel from './HomeModel';
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 
 const HomeController = () => {
 
     let homeModel: HomeModel = new HomeModel();
     const list = homeModel.getList()
 
-    const [count, setCount] = useState<number>(0);
+    // const [count, setCount] = useState<number>(0);
 
     useEffect(() => {
         list.request()
