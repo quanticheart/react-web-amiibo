@@ -8,11 +8,10 @@ const HomeController = () => {
     let homeModel: HomeModel = new HomeModel();
     const list = homeModel.getList()
 
-    // const [count, setCount] = useState<number>(0);
-
     useEffect(() => {
-        list.request()
-    });
+        if (list.data == null)
+            list.request()
+    }, [list]);
 
     return <HomeView data={list.data} loading={list.loading}/>
 }

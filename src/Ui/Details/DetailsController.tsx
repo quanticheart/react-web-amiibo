@@ -15,8 +15,9 @@ const DetailsController = () => {
     };
 
     useEffect(() => {
-        details.request(infoID)
-    });
+        if (details.data == null)
+            details.request(infoID)
+    }, [details, infoID]);
 
     return <DetailView details={details.data} loading={details.loading} onBackButton={onBackButton}/>;
 };
