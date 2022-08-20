@@ -7,7 +7,8 @@ const getDetails = (id: string) => {
     return api.get("/amiibo?tail=" + id);
 }
 
-export default {
+const functions = {
     getList,
     getDetails
 };
+export default functions

@@ -12,9 +12,7 @@ const HomeController = () => {
 
     useEffect(() => {
         list.request()
-        return () => {
-        }
-    }, []);
+    });
 
     return <HomeView data={list.data} loading={list.loading}/>
 }
