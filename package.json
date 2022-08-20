@@ -54,5 +54,6 @@
   "devDependencies": {
     "@mui/types": "^7.1.5",
     "@types/styled-components": "^5.1.26"
-  }
+  },
+  "homepage": "https://quanticheart.github.io/react-web-amiibo/"
 }
